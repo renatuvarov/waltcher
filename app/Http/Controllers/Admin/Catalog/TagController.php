@@ -28,7 +28,7 @@ class TagController extends Controller
         Tag::create([
             'name' => mb_strtolower($request->input('name')),
             'slug' => $request->input('slug') ?: Str::slug($request->input('name')),
-            'main' => $request->input('main') ?? false,
+            'main' => (bool)$request->input('main') ?? false,
             'img' => $fileManager->load($request->file('img'), 'tags'),
         ]);
 
@@ -49,7 +49,7 @@ class TagController extends Controller
         $tag->update([
             'name' => mb_strtolower($request->input('name')),
             'slug' => $request->input('slug') ?: Str::slug($request->input('name')),
-            'main' => $request->input('main') ?? false,
+            'main' => (bool)$request->input('main') ?? false,
             'img' => $path ?? $tag->img,
         ]);
 

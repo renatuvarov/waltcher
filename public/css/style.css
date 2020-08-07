@@ -971,6 +971,7 @@ input.form-equipment:focus::-webkit-input-placeholder {
     background-image: url("/assets/img/W-back1.jpg");
     background-size: cover;
     height: 100%;
+    overflow-y: scroll;
 }
 
 .form-equipment-block--active {

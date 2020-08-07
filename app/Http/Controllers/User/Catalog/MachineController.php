@@ -27,7 +27,6 @@ class MachineController extends Controller
     public function show(string $machine)
     {
         $machine = $this->machineRepository->findWithAllRelations($machine);
-
         $fragment = 'user.catalog.machines.';
         $view = $machine->is_landing ? $fragment . $machine->slug : $fragment . 'show';
 
