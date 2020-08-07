@@ -1,0 +1,31 @@
+.to-top {
+    bottom: 50px;
+    right: 30px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: fixed;
+    transition: 0.3s ;
+    width: 56px;
+    height: 56px;
+    z-index: 99;
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0;
+
+    svg {
+        height: 26px;
+        width: 26px;
+    }
+}
+
+.to-top--active {
+    opacity: 1;
+}
+
+.to-top:hover {
+    transform: translateY(-3px);
+    background-color: #f4f4f4;
+}

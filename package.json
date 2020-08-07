@@ -1,0 +1,33 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env process.env.section=website NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env process.env.section=website NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env process.env.section=website NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "landings-dev": "npm run landings-development",
+        "landings-development": "cross-env process.env.section=landings NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "landings-watch": "npm run landings-development -- --watch",
+        "landings-watch-poll": "npm run landings-watch -- --watch-poll",
+        "landings-hot": "cross-env process.env.section=landings NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "landings-prod": "npm run landings-production",
+        "landings-production": "cross-env process.env.section=landings NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.19",
+        "cross-env": "^5.1",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.13",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.15.2",
+        "sass-loader": "^8.0.0",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "jquery": "^3.4.1",
+        "owl.carousel": "^2.3.4"
+    }
+}

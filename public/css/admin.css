@@ -1,0 +1,37 @@
+.header {
+    box-shadow: 0px 2px 13px -1px rgba(0,0,0,0.35);
+}
+
+.logout {
+    border: none;
+    background: none;
+}
+
+nav .dropdown-menu {
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);;
+}
+
+.required {
+    position: relative;
+}
+
+.required:before {
+    content: '*';
+    color: #c82333;
+    position: absolute;
+    top: -5px;
+    left: -15px;
+    font-size: 20px;
+}
+
+.invalid-feedback {
+    display: block !important;
+}
+
+.note-editor {
+    margin: auto;
+}
+
+.ms-container {
+    margin: auto;
+}
