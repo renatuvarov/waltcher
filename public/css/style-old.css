@@ -17,6 +17,10 @@ body {
     height: 100%;
 }
 
+img {
+    max-width: 100%;
+}
+
 input {
     color: white!important;
 }
@@ -971,6 +975,7 @@ input.form-equipment:focus::-webkit-input-placeholder {
     background-image: url("/assets/img/W-back1.jpg");
     background-size: cover;
     height: 100%;
+    overflow-y: scroll;
 }
 
 .form-equipment-block--active {
@@ -1590,15 +1595,10 @@ p.order-form_wrapper span a {
         }
     }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 850px;
-    }
-}
 
 .card {
     height: 470px;
-    border-radius: 10px;
+    border-radius: 0;
     background-color: #fff;
     box-shadow: 0 40px 40px -20px #8fc7d544;
     overflow: hidden;
@@ -1662,6 +1662,8 @@ p.order-form_wrapper span a {
 .card .text-exhibitions {
     overflow: hidden;
     max-height: 90px;
+    color: #232323;
+    margin-top: 25px;
 }
 
 .exhibitions-blog {
@@ -1706,6 +1708,9 @@ p.order-form_wrapper span a {
     line-height: 50px;
     font-size: 14px;
     font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-decoration: none;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
@@ -1723,4 +1728,16 @@ p.order-form_wrapper span a {
 .btn-exhibitions:hover, .btn-red.active {
     background-color: #cb2128;
     color: #fff;
+}
+
+.to-admin {
+    position: fixed;
+    top: 150px;
+    left: 50px;
+    z-index: 99999999;
+    font-weight: bolder;
+}
+
+.invalid-feedback {
+    display: block !important;
 }

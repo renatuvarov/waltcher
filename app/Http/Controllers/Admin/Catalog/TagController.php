@@ -58,7 +58,7 @@ class TagController extends Controller
 
     public function destroy(Tag $tag, FileManager $fileManager)
     {
-        $fileManager->delete(Collection::make($tag->img));
+        $fileManager->delete($tag->img);
         $tag->delete();
         return redirect()->route('admin.tag.index');
     }

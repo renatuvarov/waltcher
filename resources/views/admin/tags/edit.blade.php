@@ -7,7 +7,7 @@
 @section('content')
     <div class="container text-center">
         <h2 class="h2 mb-5 display-4">Редактировать категорию</h2>
-        <form class="text-left w-50 m-auto" method="post" action="{{ route('admin.tag.update', ['tag' => $tag->id]) }}" enctype="multipart/form-data">
+        <form class="text-left w-50 m-auto" method="post" action="{{ route('admin.tag.update', ['tag' => $tag->slug]) }}" enctype="multipart/form-data">
             @csrf
             @method('put')
             <div class="form-group w-50 ml-auto mr-auto mb-5 text-left d-flex">

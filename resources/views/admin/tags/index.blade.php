@@ -27,10 +27,10 @@
                         <td class="align-middle">{{$tag->slug}}</td>
                         <td class="w-25"><div class="w-25 m-auto"><img class="img-fluid" src="{{$tag->img}}" alt=""></div></td>
                         <td class="align-middle">
-                            <a class="btn btn-info" href="{{ route('admin.tag.edit', ['tag' => $tag->id]) }}">
+                            <a class="btn btn-info" href="{{ route('admin.tag.edit', ['tag' => $tag->slug]) }}">
                                 <i class="fa fa-edit"></i>
                             </a>
-                            <button data-destroy="{{ route('admin.tag.destroy', ['tag' => $tag->id]) }}" type="button" class="btn btn-danger btn-destroy">
+                            <button data-destroy="{{ route('admin.tag.destroy', ['tag' => $tag->slug]) }}" type="button" class="btn btn-danger btn-destroy">
                                 <i class="fa fa-trash"></i>
                             </button>
                         </td>

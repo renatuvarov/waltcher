@@ -8,6 +8,6 @@ class MainController extends Controller
 {
     public function index()
     {
-        return view('main', compact('categories','exhibitions'));
+        return view('main');
     }
 }

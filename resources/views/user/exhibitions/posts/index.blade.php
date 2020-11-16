@@ -26,9 +26,9 @@
                                                 </div>
                                                 <div class="card-content">
                                                     <h3 class="title">{{ $post->title }}</h3>
-                                                    <h6 class="tag">tag</h6>
+                                                    <h6 class="tag">{{ $post->created_at->format('Y-m-d') }}</h6>
                                                     <div class="text-exhibitions">
-                                                        {{ $post->created_at->format('Y-m-d') }}
+                                                        {{ $post->short_description }}
                                                     </div>
                                                 </div>
                                                 <button type="button" class="btn-exhibitions">Read more</button>
